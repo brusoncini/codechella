@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso</title>
+
+    <!--css importado-->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!--cabeçalho-->
+    <header class="cabecalho">        
+        <div class="cabecalho__container">
+            <img src="./assets/logo-branco.svg" alt="logotipo do festival">
+            
+            <!--menu hamburger-->
+            <label for="menu">
+                <span class="cabecalho__menu" src="./assets/menu.svg" alt="menu hambúrger"></span>
+            </label>
+        </div>
+        <input type="checkbox" id="menu" class="container__botao">
+        <ul class="cabecalho__menu-lista">
+            <li class="menu-lista__item">
+                <a href="experiencia.html">A Experiência</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="setores.html">Mapa de Setores</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="informacoes.html">Informações</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="formulario.html">Ingresso</a>
+            </li>
+        </ul>
+    </header>
+
+    <!--banner-->
+    <section class="banner-formulario">
+        <div class="banner__titulo">
+            <h1>Garanta seu Ingresso</h1>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h2 class="formulario__titulo">Preencha o formulário a seguir:</h2>
+
+        <!--formulário-->
+        <form action="#" method="" id="formulario">
+            <div class="formulario__item">
+                <label for="nome"><h3>Nome completo:</h3></label>
+                <input type="text" id="nome" />
+            </div>
+            <div class="formulario__item">
+                <label for="email"><h3>E-mail:</h3></label>
+                <input type="email" id="email" />
+            </div>
+
+            <div class="linha-2">                
+                <div class="formulario__item">
+
+                    <!--lista de opções-->
+                    <label for="tipo-ingresso"><h3>Tipo de Ingresso:</h3></label>        
+                    <select class="tipo-ingresso">
+                        <option value="">Tipo de Ingresso</option>
+                        <option value="valor-item-1">Pista</option>
+                        <option value="valor-item-2">Pista Premium</option>
+                        <option value="valor-item-3">Cadeiras</option>
+                        <option value="valor-item-4">Cadeiras Superiores</option>
+                    </select>
+                </div>
+
+                <div class="formulario__item">
+                    <label for="nascimento"><h3>Data de nascimento:</h3></label>
+                    <input type="date" id="nascimento" />
+                </div>
+            </div>
+
+            <!--botao-->
+            <div class="container__botao">
+                <button class="botao" type="submit"><p>Avançar ➜</p></button>
+            </div>
+        </form>        
+    </section>
+
+    <!--rodape-->
+    <footer class="rodape">
+        <div class="rodape__container">
+            <img src="./assets/logo-cinza.svg" alt="logotipo do festival">
+            <div class="rodape__redes-sociais">                
+                <p>Acesse nossas redes:</p>
+                <div class="rodape__container__links">
+                    <a><img src="./assets/icone-whatsapp.svg"></a>
+                    <a><img src="./assets/icone-twitch.svg"></a>
+                    <a><img src="./assets/icone-instagram.svg"></a>
+                    <a><img src="./assets/icone-twitter.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape__container">
+            <p>Desenvolvido por: Bruna</p>
+            <p>Projeto fictício sem fins comerciais</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

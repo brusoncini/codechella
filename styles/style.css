@@ -1,0 +1,37 @@
+/*fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap');
+/*css páginas*/
+@import url('cabecalho.css');
+@import url('rodape.css');
+@import url('lineup.css');
+@import url('experiencia.css');
+@import url('setores.css');
+@import url('informacoes.css');
+@import url('formulario.css');
+@import url('ingresso.css');
+
+:root {
+    --azul-claro: #C8DEEF;
+    --azul-escuro: #2E7BA2;
+    --azul-hover: #519EC5;
+    --amarelo-claro: #FBF0DD;
+    --amarelo: #FACF9D;
+    --mostarda: #DF9010;
+    --cinza: #444444;
+    --branco: #ffffff;
+    --gradiente-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --fonte-titulos: 'Calistoga';
+    --fonte-texto: 'Raleway';
+}
+
+body {
+    box-sizing: border-box;
+    background: var(--gradiente-verao);
+    background-repeat: no-repeat;
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--cinza);
+}
+

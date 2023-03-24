@@ -1,0 +1,163 @@
+.banner-setores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner__titulo {
+    text-align: center;
+    padding: 8%;
+    font-family: var(--fonte-titulos);
+    font-size: 4rem;
+}
+
+.banner-setores::before {
+    content:"";
+    position: absolute;
+    background: url("../assets/banner-setores.jpg");
+    background-position: bottom;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.mapa {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.legenda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.legenda__titulo {
+    font-family: var(--fonte-texto);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.legenda__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.detalhes {
+    display: grid;
+    grid-template:
+    "titulo titulo titulo"
+    "pista . cadeiras"
+    "pista premium cadeiras"
+    ". premium .";
+    gap: 32px;
+    padding: 3% 5%
+    
+}
+
+.detalhes__titulo {
+    font-family: var(--fonte-texto);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    grid-area: titulo;
+}
+
+.pista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: pista;
+}
+
+.premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: premium;
+}
+
+.cadeiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: cadeiras;
+}
+
+
+.pista__texto, .premium__texto, .cadeiras__texto {
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 32px;
+}
+
+.setor__titulo {
+    font-family: var(--fonte-texto);
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.pista__imagem {
+    background-image: url('../assets/pista-imagem.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    height: 15rem;
+    width: 50vh;
+}
+
+.premium__imagem {
+    background-image: url('../assets/premium-imagem.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    height: 15rem;
+    width: 50vh;
+}
+
+.cadeiras__imagem {
+    background-image: url('../assets/cadeiras-imagem.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    height: 15rem;
+    width: 50vh;
+}
+
+@media (max-width: 1200px) {
+
+    .mapa {
+        flex-direction: column;
+    }
+
+    .detalhes {
+        display: flex;
+        flex-direction: column;
+        padding-top: 64px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .mapa__imagem {
+        width: 40vh;
+    }
+
+    .pista__imagem, .premium__imagem, .cadeiras__imagem {
+        width: 40vh;
+    }
+}
