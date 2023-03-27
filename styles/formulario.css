@@ -70,9 +70,14 @@ input, select {
     font-family: var(--fonte-texto);
     font-size: 20px;
     font-weight: 500;
+    border: none;
 }
 
-.container__botao {
-    display: flex;
+.botao__formulario {
+    width: fit-content;
     align-self: center;
+}
+
+button {
+    border: none;
 }
