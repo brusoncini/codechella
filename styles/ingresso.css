@@ -1,26 +1,17 @@
-.banner-ingresso {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.banner-ingresso::before {
-    content:"";
-    position: absolute;
-    background: url("../assets/banner-ingresso.jpg");
-    background-position: center;
-    background-size: cover;
-    inset: 0;
-    z-index: -1;
-    opacity: 0.3;
-}
-
-.ingresso {
+/* DESKTOP */
+.container-ingresso {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em;
+}
+
+.ingresso {
+    background: var(--gradiente-verao);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    border: 4px dashed var(--cinza);
+    padding: 1em 2em;
+    width: 50vw;
 }
 
 .ingresso__titulo {
@@ -31,20 +22,13 @@
     margin-bottom: 2em;
 }
 
-.ingresso__conteudo {
-    background: var(--gradiente-verao);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);   
-    padding: 1em 2em;
-    width: 50vw;
-}
-
 .ingresso__imagens {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1em;
 }
 
-.ingresso__texto {
+.ingresso__descricao {
     display: flex;
     align-items: center;
     line-height: 40px;
@@ -57,18 +41,28 @@
     padding-bottom: .5em;
 }
 
+/* TABLET */
 @media (max-width: 1200px) {
 
-    .ingresso__texto {
+    .ingresso {
+        text-align: center;
+    }
+
+    .ingresso-texto {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
+    .ingresso__descricao {
+        display: block
+    }
 }
 
+/* MOBILE */
 @media (max-width: 670px) {
 
-    .ingresso__conteudo {
-        width: 40vh;
+    .ingresso {
+        width: 60vw;
     }
 }

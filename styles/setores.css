@@ -1,29 +1,4 @@
-.banner-setores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.banner__titulo {
-    text-align: center;
-    padding: 8%;
-    font-family: var(--fonte-titulos);
-    font-size: 4rem;
-}
-
-.banner-setores::before {
-    content:"";
-    position: absolute;
-    background: url("../assets/banner-setores.jpg");
-    background-position: bottom;
-    background-size: cover;
-    inset: 0;
-    z-index: -1;
-    mix-blend-mode: multiply;
-    opacity: 0.5;
-}
-
+/* DESKTOP */
 .mapa {
     padding-top: 5%;
     display: flex;
@@ -54,110 +29,79 @@
 }
 
 .detalhes {
-    display: grid;
-    grid-template:
-    "titulo titulo titulo"
-    "pista . cadeiras"
-    "pista premium cadeiras"
-    ". premium .";
-    gap: 32px;
-    padding: 3% 5%
-    
+    margin: 2em 0;
 }
 
-.detalhes__titulo {
-    font-family: var(--fonte-texto);
-    font-size: 40px;
+.detalhes-titulo {
     font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 38px;
     text-align: center;
-    grid-area: titulo;
+    margin-bottom: 1em;
 }
 
-.pista {
-    display: flex;
-    flex-direction: column;
+.cards {
     align-items: center;
-    grid-area: pista;
+    text-align: center;
+    display: flex;
+    margin: 0 4em;
+}
+
+.pista,
+.cadeiras,
+.premium {
+    margin: 0 1em;
 }
 
 .premium {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: premium;
-}
-
-.cadeiras {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: cadeiras;
-}
-
-
-.pista__texto, .premium__texto, .cadeiras__texto {
-    font-family: var(--fonte-texto);
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 40px;
-    padding-top: 32px;
+    padding-top: 5em;
 }
 
 .setor__titulo {
-    font-family: var(--fonte-texto);
-    font-size: 32px;
     font-weight: 700;
-    padding-bottom: 32px;
+    font-size: 32px;
+    line-height: 38px;
+    margin: .5em 0;
 }
 
-.pista__imagem {
-    background-image: url('../assets/pista-imagem.jpg');
-    background-position: center;
-    background-size: cover;
+.setor__descricao {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.card-imagem {
+    object-fit: cover;
     border-radius: 16px;
-    height: 15rem;
-    width: 50vh;
+    height: 250px;
+    width: 381px;
 }
 
-.premium__imagem {
-    background-image: url('../assets/premium-imagem.jpg');
-    background-position: center;
-    background-size: cover;
-    border-radius: 16px;
-    height: 15rem;
-    width: 50vh;
-}
-
-.cadeiras__imagem {
-    background-image: url('../assets/cadeiras-imagem.jpg');
-    background-position: center;
-    background-size: cover;
-    border-radius: 16px;
-    height: 15rem;
-    width: 50vh;
-}
-
+/* TABLET */
 @media (max-width: 1200px) {
 
     .mapa {
         flex-direction: column;
     }
 
-    .detalhes {
-        display: flex;
+    .cards {
         flex-direction: column;
         padding-top: 64px;
     }
 }
 
+/* MOBILE */
 @media (max-width: 670px) {
 
-    .mapa__imagem {
-        width: 40vh;
+    .detalhes {
+        margin: 1em 0;
     }
 
-    .pista__imagem, .premium__imagem, .cadeiras__imagem {
-        width: 40vh;
+    .mapa__imagem {
+        width: 70vw;
+    }
+
+    .card-imagem {
+        width: 60vw;
     }
 }

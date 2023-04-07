@@ -1,0 +1,94 @@
+/* DESKTOP */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner__titulo {
+    text-align: center;
+    padding: 8%;
+    font-family: var(--fonte-titulos);
+    font-size: 4rem;
+    line-height: normal;
+}
+
+.banner-principal::before {
+    background: url("../assets/banner.jpg");
+    content:"";
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.banner-experiencia::before {
+    content:"";
+    position: absolute;
+    background-image: url("../assets/banner-experiencia.jpg");
+    background-position: top;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.banner-setores::before {
+    content: "";
+    position: absolute;
+    background: url("../assets/banner-setores.jpg");
+    background-position: bottom;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.banner-informacoes::before {
+    content:"";
+    position: absolute;
+    background: url("../assets/banner-informacoes.jpg");
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.banner-formulario::before {
+    content: "";
+    position: absolute;
+    background: url("../assets/banner-formulario.jpg");
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.banner-ingresso::before {
+    content: "";
+    position: absolute;
+    background: url("../assets/banner-ingresso.jpg");
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* MOBILE */
+@media (max-width: 1200px) {
+
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+
+
+

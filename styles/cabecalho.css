@@ -1,3 +1,4 @@
+/* DESKTOP */
 .cabecalho {
     display: flex;
     background-color: var(--azul-escuro);
@@ -27,6 +28,7 @@
     font-weight: 700;
 }
 
+/* TABLET */
 @media (max-width: 1200px) {
 
     .cabecalho {
@@ -38,6 +40,7 @@
     }
 }
 
+/* CELULAR */
 @media (max-width: 670px) {
 
     .cabecalho {

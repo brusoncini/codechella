@@ -1,6 +1,7 @@
-/*fonte*/
+/* fontes do texto */
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap');
-/*css páginas*/
+
+/* css páginas */
 @import url('cabecalho.css');
 @import url('rodape.css');
 @import url('lineup.css');
@@ -9,6 +10,7 @@
 @import url('informacoes.css');
 @import url('formulario.css');
 @import url('ingresso.css');
+@import url('banner.css');
 
 :root {
     --azul-claro: #C8DEEF;
@@ -34,4 +36,25 @@ body {
     line-height: 40px;
     color: var(--cinza);
 }
+
+.botao {
+    display: flex;
+    align-items: center;
+    background: var(--azul-escuro);
+    border-radius: 16px;
+    box-shadow: 4px 4px var(--cinza);  
+    color: var(--branco);
+    font-weight: 700;
+    padding: .5em 1em;
+    margin: .5em 0;
+    gap: 25px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--azul-hover);
+    cursor: pointer;
+}
+
+
 

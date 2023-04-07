@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso</title>
+
+    <!-- css importado -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!--cabeçalho-->
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <img src="../assets/logo-branco.svg" alt="logotipo do festival">
+            <!--menu hamburger-->
+            <label for="menu">
+                <span class="cabecalho__menu" src="../assets/menu.svg" alt="menu hambúrger"></span>
+            </label>
+        </div>
+
+        <input type="checkbox" id="menu" class="container__botao">
+        <ul class="cabecalho__menu-lista">
+            <li class="menu-lista__item">
+                <a href="./experiencia.html">A Experiência</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="./setores.html">Mapa de Setores</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="./informacoes.html">Informações</a>
+            </li>
+            <li class="menu-lista__item">
+                <a href="./formulario.html">Ingresso</a>
+            </li>
+        </ul>
+    </header>
+
+    <!--banner-->
+    <section class="banner banner-formulario">
+        <h1 class="banner__titulo">Garanta seu Ingresso</h1>
+    </section>
+
+    <!--formulário-->
+    <main class="container-formulario">
+        <h2 class="formulario__titulo">Preencha o formulário a seguir:</h2>
+        <form class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="formulario__container">
+                <div>
+                    <label for="tipo-ingresso">Tipo de ingresso:</label>
+                    <select id="tipo-ingresso" name="tipo-ingresso" required>
+                        <option value="">Tipo de ingresso</option>
+                        <option value="Pista Premium">Pista Premium</option>
+                        <option value="Pista Comum">Pista Comum</option>
+                        <option value="Cadeiras Terreo">Cadeiras térreo</option>
+                        <option value="Cadeiras Superiores">Cadeiras superiores</option>
+                        <option value="Rampas">Rampas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="aniversario">Data de nascimento</label>
+                    <input type="date" id="aniversario" name="aniversario" required>
+                </div>
+            </div>
+            <button class="botao botao__avancar" type="submit">Avançar!</button>
+        </form>
+    </main>
+
+    <!--rodape-->
+    <footer class="rodape">
+        <div class="rodape__container">
+            <img src="../assets/logo-cinza.svg" alt="logotipo do festival">
+            <div class="rodape__redes-sociais">
+                <p>Acesse nossas redes:</p>
+                <div class="rodape__container__links">
+                    <a><img src="../assets/icone-whatsapp.svg"></a>
+                    <a><img src="../assets/icone-twitch.svg"></a>
+                    <a><img src="../assets/icone-instagram.svg"></a>
+                    <a><img src="../assets/icone-twitter.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape__container">
+            <p>Desenvolvido por: Bruna</p>
+            <p>Projeto fictício sem fins comerciais</p>
+        </div>
+    </footer>
+
+    <!--importação javascript-->
+    <script src="../scripts/formulario.js" type="module"></script>
+
+</body>
+
+</html>

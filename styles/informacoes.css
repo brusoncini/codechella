@@ -1,28 +1,4 @@
-.banner-informacoes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.banner__titulo {
-    text-align: center;
-    padding: 8%;
-    font-family: var(--fonte-titulos);
-    font-size: 4rem;
-}
-
-.banner-informacoes::before {
-    content:"";
-    position: absolute;
-    background: url("../assets/banner-informacoes.jpg");
-    background-position: center;
-    background-size: cover;
-    inset: 0;
-    z-index: -1;
-    opacity: 0.5;
-}
-
+/* DESKTOP */
 .faq {
     display: flex;
     flex-direction: column;
@@ -35,7 +11,7 @@
     font-size: 48px;
     font-weight: 400;
     text-align: center;
-    margin-top: 1em;
+    margin: 1em 0;
 }
 
 .faq__accordion {
@@ -55,7 +31,7 @@
     cursor: pointer;
 }
 
-/*editar a setinha padrão*/
+/* edita a setinha padrão do accordion */
 details > summary { 
     list-style: none;
 }
