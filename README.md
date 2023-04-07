@@ -28,4 +28,3 @@ Aprendi a correr atrás de conhecimento novo quando eu senti necessidade de pers
 Estou prontíssima para meu próximo desafio :)
 
 Baseado nesse modelo do [Figma](https://www.figma.com/file/xHLPBeA2ujaXbBjHMK9xh7/CodeChella-%7C-Challenge-I---Front-end-2023?node-id=48%3A205&t=HapL45257x63LOG6-0).
-# CodeChella 2023
