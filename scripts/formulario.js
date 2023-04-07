@@ -10,7 +10,7 @@ formulario.addEventListener('submit', function (event) {
     const aniversario = document.querySelector('#aniversario').value;
 
     // armazena os valores no localStorage //
-    localStorage.setItem('nome', name);
+    localStorage.setItem('nome', nome);
     localStorage.setItem('tipo-ingresso', tipoIngresso);
 
     // redireciona para a página de ingresso //
