@@ -2,7 +2,7 @@ const ingressoDescricao = document.querySelector('.ingresso__descricao');
 
 // pega os valores armazenados no localStorage //
 const nome = localStorage.getItem('nome');
-const tipoIngresso = localStorage.getItem('tipoIngresso');
+const tipoIngresso = localStorage.getItem('tipo-ingresso');
 const aniversario = localStorage.getItem('aniversario');
 
 // cria o conteúdo dinâmico do elemento .ingresso__informacoes //
