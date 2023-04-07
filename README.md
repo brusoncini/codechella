@@ -10,7 +10,7 @@ Esse projeto é minha participação no desafio Front-End da Alura. O objetivo �
 | :rocket: URL         | https://codechella-brusoncini.vercel.app/
 | :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6/semana-01-conheca-codechella
 
-![image](https://user-images.githubusercontent.com/120529944/224750336-43fd4fee-7c75-4303-a22a-ba8ecd09a1bf.png#vitrinedev)
+![image](https://user-images.githubusercontent.com/120529944/230633176-0a5711d5-4c0a-4557-9114-614065f63c65.png#vitrinedev)
 
 ## Detalhes do projeto
 
