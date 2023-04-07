@@ -7,7 +7,7 @@ const aniversario = localStorage.getItem('aniversario');
 
 // cria o conteúdo dinâmico do elemento .ingresso__informacoes //
 const descricaoHtml = `
-  <h3>${nome}</h3>
+  <h3 class="ingresso-nome">${nome}</h3>
   <p>Ingresso ${tipoIngresso}</p>
   <p>Data: 11/03</p>
   <p>Local: São Paulo-SP</p>
